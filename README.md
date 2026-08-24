@@ -1,17 +1,107 @@
-# React_Recipe_App
+# Kitchen Table — Recipe Discovery & Meal Planning App
 
-A local cooking school has partnered with food bloggers to create an interactive recipe discovery and meal planning application. They need a modern, responsive React application that allows users to browse recipes, plan weekly meals, watch cooking tutorials, and save their favorite dishes. You've been hired to build this application from scratch, demonstrating your proficiency in React fundamentals, component architecture, state management, and modern JavaScript practices.
+A responsive React application for browsing recipes, planning a week of
+meals, and saving favorites. Built for a local cooking school's capstone
+project, demonstrating component architecture, hooks-based state
+management, routing, and multimedia integration.
 
-Your task is to build a fully functional Recipe Discovery & Meal Planning application using React. You must create the entire application from the ground up, demonstrating mastery of functional components, hooks, props, event handling, routing, conditional rendering, and multimedia integration. The application must be well-organized, styled professionally, and provide an excellent user experience.
+## Features
 
-## Project Overview: Recipe Discovery & Meal Planning App
-**Core Features Required:**
-- Browse and search recipes by category, cuisine, or ingredients
-- View detailed recipe information with ingredients and instructions
-- Watch embedded cooking tutorial videos
-- Listen to cooking tips audio guides
-- Add recipes to a weekly meal planner (Monday-Sunday)
-- Mark recipes as favorites
-- Filter and sort recipes dynamically
-- Responsive navigation with multiple routes
-- Interactive user interface with smooth transitions
+- **Recipe browsing** — search by title, filter by category, cuisine,
+  and difficulty, with clear/reset controls
+- **Recipe detail pages** — full ingredient lists, step-by-step
+  instructions, an embedded cooking tutorial video, and an audio tips
+  clip
+- **Weekly meal planner** — seven day cards (Monday–Sunday), each with
+  breakfast/lunch/dinner slots; add or remove recipes per slot; clear
+  the whole week
+- **Favorites** — save/unsave any recipe, with a live count in the nav
+  and a dedicated favorites page (including an empty state)
+- **Responsive navigation** — sticky top nav with active-route
+  highlighting on desktop, a hamburger/bottom-tab layout on mobile
+- **Persistent state** — favorites and the meal plan are saved to
+  `localStorage` and reload with the app
+- **Loading, empty, and error states** throughout, so the UI never
+  looks broken while data is fetching or absent
+
+## Tech stack
+
+- React (functional components + hooks only, no class components)
+- React Router DOM — client-side routing
+- PropTypes — runtime props validation
+- CSS Modules — component-scoped styling
+- Vite (or Create React App) — build tooling
+
+## Getting started
+
+```bash
+npm install
+npm start
+```
+
+The app runs at `http://localhost:5173` (Vite) or `http://localhost:3000`
+(CRA).
+
+## Project structure
+
+```
+src/
+├── components/
+│   ├── Navigation/      Navbar
+│   ├── Recipe/           RecipeCard, RecipeList, RecipeDetail, RecipeFilter
+│   ├── MealPlanner/      MealPlanner, DayCard
+│   ├── Media/            VideoPlayer, AudioPlayer
+│   ├── UI/                Button, Card, SearchBar, Loading, Modal
+│   └── common/            Header, Footer
+├── pages/                Home, RecipesPage, MealPlannerPage, FavoritesPage, NotFound
+├── data/                 recipesData.js — sample recipe dataset
+├── utils/                helpers.js — formatting and filtering helpers
+├── App.jsx
+└── index.js
+```
+
+## Component overview
+
+| Component                                         | Purpose                                                |
+| ------------------------------------------------- | ------------------------------------------------------ |
+| `Navbar`                                          | Route links, active styling, responsive hamburger menu |
+| `RecipeCard`                                      | Recipe summary — image, title, time, favorite toggle   |
+| `RecipeList`                                      | Maps an array of recipes to `RecipeCard`s              |
+| `RecipeDetail`                                    | Full recipe view with ingredients, steps, video/audio  |
+| `RecipeFilter`                                    | Category, cuisine, and difficulty filter controls      |
+| `MealPlanner`                                     | Container holding the seven `DayCard`s                 |
+| `DayCard`                                         | One day's breakfast/lunch/dinner slots; reused 7x      |
+| `VideoPlayer` / `AudioPlayer`                     | HTML5 media wrappers with fallback text                |
+| `Button`, `Card`, `SearchBar`, `Loading`, `Modal` | Shared, reusable UI primitives                         |
+
+## State management
+
+Shared state (`favorites`, `mealPlan`, `recipes`) lives in `App.jsx` and
+is lifted down to pages via props, with callback props lifting user
+actions (favorite toggles, meal-plan edits) back up. Local UI state
+(search term, filter selections, modal visibility) stays inside the
+component that owns it. Favorites and the meal plan sync to
+`localStorage` via `useEffect`.
+
+## Routing
+
+| Route           | Page                          |
+| --------------- | ----------------------------- |
+| `/`             | Home                          |
+| `/recipes`      | Recipe browsing + filters     |
+| `/recipes/:id`  | Recipe detail (dynamic route) |
+| `/meal-planner` | Weekly meal planner           |
+| `/favorites`    | Saved recipes                 |
+| `*`             | 404 Not Found                 |
+
+## Future enhancements
+
+- Drag-and-drop meal planning instead of add/remove buttons
+- Shopping list generated from a week's planned meals
+- User accounts so favorites/meal plans sync across devices
+- Nutrition info per recipe and per planned day
+
+## Screenshots
+
+_To be added as the UI is built: Home, Recipes with filters, Recipe
+detail with video, Meal planner, Favorites, Mobile view._
