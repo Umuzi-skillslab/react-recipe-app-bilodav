@@ -1,0 +1,10 @@
+.link {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+.link svg {
+  margin-right: 15px;
+}

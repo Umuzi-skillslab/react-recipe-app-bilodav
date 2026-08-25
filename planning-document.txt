@@ -1,5 +1,5 @@
 PLANNING DOCUMENT
-Kitchen Table — Recipe Discovery & Meal Planning App
+Palateer — Recipe Discovery & Meal Planning App
 
 STATUS AS OF THIS DOCUMENT
 No code has been written yet. Six UI mockups have been designed
