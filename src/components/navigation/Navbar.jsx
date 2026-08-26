@@ -30,18 +30,22 @@ function Navbar() {
 
   return (
     <nav ref={navRef}>
-      {links.map(({ svg, label, to }) => (
-        <NavLink
-          key={to}
-          to={to}
-          className={({ isActive }) =>
-            `${styles.link} ${isActive ? styles.active : ""}`
-          }
-        >
-          <span dangerouslySetInnerHTML={{ __html: svg }} />
-          {label}
-        </NavLink>
-      ))}
+      <div className={styles["logo-container"]}></div>
+      <div className={styles["link-box"]}>
+        {links.map(({ svg, label, to }) => (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) =>
+              isActive ? `${styles.link} ${styles.active}` : styles.link
+            }
+          >
+            <span dangerouslySetInnerHTML={{ __html: svg }} />
+            <span className={styles.label}> {label}</span>
+          </NavLink>
+        ))}
+      </div>
+      <div className={styles["nav-filler"]}></div>
     </nav>
   );
 }

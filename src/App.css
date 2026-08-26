@@ -109,6 +109,7 @@ section {
 body {
   line-height: 1;
   min-width: 300px;
+  margin: 0;
 }
 
 ol,
@@ -192,7 +193,7 @@ html {
   --color-gray-500: #7c7a75;
   --color-gray-600: #504f4f;
   --color-gray-700: #37363a;
-  --color-ink: #212832; /* near-black — headings, nav, footers */
+  --color-ink: #212832; /* near-black*/
   --color-black: #000000;
 
   /* ── Text ── */
@@ -201,13 +202,13 @@ html {
   --text-muted: #7c7a75;
   --text-light: #a3a19c;
   --text-white: #fdfcfb;
-  --text-accent: #3f8d32;
+  --text-accent: #2f8c18;
 
   /* ── Backgrounds ── */
-  --bg-primary: #fdfcfb;
+  --bg-primary: #fefefe;
   --bg-secondary: #f1f1f1;
   --bg-tint-green: #ecf5e7;
-  --bg-tint-gold: #fef8eb;
+  --bg-tint-nav: #fdfaf4;
   --bg-tint-coral: #fef2ef;
   --bg-dark: #212832;
   --bg-accent: #3f8d32;
@@ -525,6 +526,30 @@ a {
 .badge-coral {
   background-color: var(--bg-tint-coral);
   color: var(--color-coral-dark);
+}
+
+/* ============================================================
+   UI GRID DISPLAY
+   ============================================================ */
+
+/* Small devices (tiny screens and up, 176px and up) */
+@media (min-width: 176px) {
+  #root {
+    /* background-color: rgba(66, 221, 66, 0.155); */
+    display: grid;
+    grid-template-rows: 80px auto;
+    height: 100vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #root {
+    /* background-color: rgba(88, 18, 253, 0.163); */
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    height: 100vh;
+  }
 }
 
 /* ============================================================

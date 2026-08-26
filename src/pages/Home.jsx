@@ -1,9 +1,11 @@
 function Home() {
   return (
     <>
-      <h1>PALATEER</h1>
-      <h2>Explore. Plan. Cook.</h2>
-      <p>Lets see if this wrks</p>
+      <section>
+        <h1>PALATEER</h1>
+        <h2>Explore. Plan. Cook.</h2>
+        <p>Lets see if this wrks</p>
+      </section>
     </>
   );
 }
