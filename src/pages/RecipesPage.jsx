@@ -11,7 +11,10 @@ function RecipesPage() {
           <p>{recipe.id}</p>
           <h2>{recipe.title}</h2>
           <p>{recipe.cookTime}</p>
-          <img src={`../src/${recipe.image}`} alt="food" />
+          <img
+            src={`../src/assets/images/recipes/${recipe.image}`}
+            alt="food"
+          />
           <ul style={{ listStyleType: "disc" }}>
             {recipe.ingredients.map((ing) => (
               <li>{ing}</li>

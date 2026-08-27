@@ -7,7 +7,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 25,
     servings: 4,
-    image: "/assets/images/carbonara.jpg",
+    image: "carbonara.jpg",
     videoUrl: "https://youtu.be/D_2DBLAt57c?si=rPQzbqOGpZlIRQ3u",
     ingredients: [
       "400g spaghetti",
@@ -34,7 +34,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 29,
     servings: 4,
-    image: "/assets/images/salmonTeriyaki.jpg",
+    image: "salmonTeriyaki.jpg",
     videoUrl: "https://youtu.be/BLurX_8Lvow?si=oepwMV3_-PQg962b",
     ingredients: [
       "500g salmon",
@@ -64,7 +64,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 36,
     servings: 5,
-    image: "/assets/images/padThai.jpg",
+    image: "padThai.jpg",
     videoUrl: "https://youtu.be/GNhF2DSY4lE?si=1YcRdxm_ux2GWPfX",
     ingredients: [
       "2 cups mixed vegetables",
@@ -94,7 +94,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 43,
     servings: 6,
-    image: "/assets/images/beefStroganoff.jpg",
+    image: "beefStroganoff.jpg",
     videoUrl: "https://youtu.be/HeeUQZ0fDBs?si=-ENLjFX8YvZtodxP",
     ingredients: [
       "500g beef",
@@ -124,7 +124,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 50,
     servings: 2,
-    image: "/assets/images/chickenParmesan.jpg",
+    image: "chickenParmesan.jpg",
     videoUrl: "https://youtu.be/8LgA6gsXR7w?si=GCSPL_DEiZL1Otb4",
     ingredients: [
       "500g chicken",
@@ -154,7 +154,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 57,
     servings: 3,
-    image: "/assets/images/shepherdsPie.jpg",
+    image: "shepherdsPie.jpg",
     videoUrl: "https://youtu.be/hJjWQw0wm28?si=pzfFfFi93y3108Zw",
     ingredients: [
       "2 cups mixed vegetables",
@@ -184,7 +184,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 64,
     servings: 4,
-    image: "/assets/images/fishChips.jpg",
+    image: "fishChips.jpg",
     videoUrl: "https://youtu.be/kIBWuUfWbCA?si=0X_76xvH09amcHtM",
     ingredients: [
       "2 cups mixed vegetables",
@@ -214,8 +214,8 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 71,
     servings: 5,
-    image: "/assets/images/recipe-8.jpg",
-    videoUrl: "/assets/videos/recipe-8-tutorial.mp4",
+    image: "chickenEnchiladas.jpg",
+    videoUrl: "https://youtu.be/8u2_RmrkD_g?si=kkqrttgKFMkDqlCq",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -244,8 +244,8 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 17,
     servings: 6,
-    image: "/assets/images/recipe-9.jpg",
-    videoUrl: "/assets/videos/recipe-9-tutorial.mp4",
+    image: "chiliConCarne.jpg",
+    videoUrl: "https://youtu.be/QfjbGlsAq6A?si=9bFJNwBzakVfcA9c",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -274,8 +274,8 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 24,
     servings: 2,
-    image: "/assets/images/recipe-10.jpg",
-    videoUrl: "/assets/videos/recipe-10-tutorial.mp4",
+    image: "beefRamen.jpg",
+    videoUrl: "https://youtu.be/Lh3eQYfiHhA?si=aYWKU6JhQb19ghnD",
     ingredients: [
       "500g beef",
       "1 onion",
@@ -304,8 +304,8 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 31,
     servings: 3,
-    image: "/assets/images/recipe-11.jpg",
-    videoUrl: "/assets/videos/recipe-11-tutorial.mp4",
+    image: "chickenNoodleSoup.jpg",
+    videoUrl: "https://youtu.be/D4r3t8VMYSI?si=wvuTUkQjffazPEE2",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -334,8 +334,8 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 38,
     servings: 4,
-    image: "/assets/images/recipe-12.jpg",
-    videoUrl: "/assets/videos/recipe-12-tutorial.mp4",
+    image: "tomatoBasilSoup.jpg",
+    videoUrl: "https://youtu.be/guwu8I2VDTI?si=3neWd4fGFZZDwA6t",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -364,8 +364,8 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 45,
     servings: 5,
-    image: "/assets/images/recipe-13.jpg",
-    videoUrl: "/assets/videos/recipe-13-tutorial.mp4",
+    image: "frenchOnionSoup.jpg",
+    videoUrl: "https://youtu.be/cYY6mBu-UQ0?si=FaX86GdJfozDA43E",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -394,8 +394,8 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 52,
     servings: 6,
-    image: "/assets/images/recipe-14.jpg",
-    videoUrl: "/assets/videos/recipe-14-tutorial.mp4",
+    image: "lentilSoup.jpg",
+    videoUrl: "https://youtu.be/4kLaRWku_oM?si=P5RbBRzU-yQf48iU",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
