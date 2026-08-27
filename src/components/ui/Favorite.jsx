@@ -2,12 +2,14 @@ import { useState } from "react";
 
 function Favorite({
   onClick,
-  isFull = true,
+  isFull = false,
   size = "20px",
   color = "#feca64",
+  className,
 }) {
   return (
     <span
+      className={className}
       style={{
         cursor: "pointer",
         width: size,

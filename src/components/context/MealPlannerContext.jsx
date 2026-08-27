@@ -37,7 +37,7 @@ export function MealPlannerProvider({ children }) {
   //   Return the context box so the children can have acces to the state
   return (
     <MealPlannerContext.Provider
-      value={{ mealPlan, addMeal, removeMeal, updateMeal, getMealForDate }}
+      value={{ mealPlan, addMeal, removeMeal, getMealForDate }}
     >
       {children}
     </MealPlannerContext.Provider>
