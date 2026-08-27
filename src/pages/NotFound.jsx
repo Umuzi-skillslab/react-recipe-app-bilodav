@@ -1,9 +1,19 @@
+import { useNavigate } from "react-router-dom";
+import Button from "../components/ui/Button";
+
 function NotFound() {
+  const navigate = useNavigate();
   return (
-    <>
-      <h1>You Lost</h1>
-      <h2>404 not found</h2>
-    </>
+    <section className="page-not-found">
+      <div className="btn-container">
+        <Button text="Go Back Home" onClick={() => navigate("/")} />
+        <Button
+          text="Explore Recipes"
+          className={"btn-coral"}
+          onClick={() => navigate("/recipes")}
+        />
+      </div>
+    </section>
   );
 }
 

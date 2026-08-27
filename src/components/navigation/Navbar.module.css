@@ -99,7 +99,7 @@
     margin-top: 20px;
     width: 65%;
     height: 2px;
-    background-color: black;
+    background-color: var(--bg-tint-green);
   }
 
   .link {

@@ -1,4 +1,5 @@
 import { recipesData } from "../data/recipesData";
+import Favorite from "../components/ui/Favorite";
 
 function RecipesPage() {
   return (
@@ -8,7 +9,7 @@ function RecipesPage() {
       <h1>recipes</h1>
       {recipesData.map((recipe) => (
         <>
-          <p>{recipe.id}</p>
+          <p>{recipe.id}</p> <Favorite />
           <h2>{recipe.title}</h2>
           <p>{recipe.cookTime}</p>
           <img
