@@ -98,7 +98,7 @@ const imagesByFilename = Object.fromEntries(
  * Fallback image shown whenever a recipe's `image` field doesn't match
  * any file found by the glob above (missing asset, typo, unmapped id, etc).
  */
-import placeholder from "../assets/images/placeholder.jpg";
+import placeholder from "/assets/images/placeholder.jpg";
 
 /**
  * Resolve a recipe's `image` field to a real, bundler-safe image URL.
