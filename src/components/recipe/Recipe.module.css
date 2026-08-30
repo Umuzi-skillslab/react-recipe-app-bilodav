@@ -195,6 +195,13 @@
     font-size: smaller;
     font-weight: 700;
   }
+
+  .recipe-details-group {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -224,5 +231,12 @@
   .recipe-detail .video-button {
     position: relative;
     top: -25%;
+  }
+
+  .recipe-details-group {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
   }
 }

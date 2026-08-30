@@ -6,6 +6,7 @@ import Button from "../ui/Button";
 import VideoPlayer from "../media/VideoPlayer";
 import { useState, useEffect } from "react";
 import List from "../ui/List";
+import TabList from "../ui/TabList";
 function RecipeDetail({
   recipe: {
     id,
@@ -24,8 +25,6 @@ function RecipeDetail({
   const { isFavorite, toggleFavorite } = useFavorites();
   const [hasError, setHasError] = useState(false);
   const navigate = useNavigate();
-
-  console.log(hasError);
 
   // Reset error state if the image prop changes (e.g. list re-filters)
   useEffect(() => {
@@ -73,12 +72,30 @@ function RecipeDetail({
         </div>
         <p>Perfect for {category}</p>
 
-        <div className={styles["recipe-details-tabbed"]}>
-          <h3>Instructions</h3>
-          <List list={instructions} listStyleType={"decimal"} ordered checked />
-
-          <h3>Ingredients</h3>
-          <List list={ingredients} listStyleType={"circle"} ordered checked />
+        <div className={styles["recipe-details-group"]}>
+          <TabList
+            headers={["instructions", "ingredients"]}
+            content={[
+              <List
+                list={instructions}
+                listStyleType={"decimal"}
+                ordered
+                checked
+              />,
+              <List
+                list={ingredients}
+                listStyleType={"circle"}
+                ordered
+                checked
+              />,
+            ]}
+          />
+          <div className={styles["recipe-meal-plan"]}>
+            <h3>Meal Plan</h3>
+            <input />
+            <input />
+            <input />
+          </div>
         </div>
       </div>
     </div>

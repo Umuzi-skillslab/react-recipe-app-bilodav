@@ -1,4 +1,3 @@
-import styles from "./UI.module.css";
 import { useState } from "react";
 
 function List({
@@ -40,7 +39,7 @@ function List({
         textDecoration:
           ordered && checkedList.has(index) ? "line-through" : "none",
       }}
-      onClick={ordered ? () => toggleChecked(index) : undefined}
+      onClick={checked ? () => toggleChecked(index) : undefined}
     >
       {item}
     </li>
