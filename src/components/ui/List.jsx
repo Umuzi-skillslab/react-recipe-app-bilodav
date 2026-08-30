@@ -6,24 +6,12 @@ function List({
   checked = false,
   listStyleType,
   listStylePosition = "inside",
+  checkedList,
+  onToggle,
 }) {
-  const [checkedList, setCheckedList] = useState(new Set([]));
-
-  const toggleChecked = (id) => {
-    setCheckedList((prev) => {
-      const nextArr = new Set(prev);
-      if (nextArr.has(id)) {
-        nextArr.delete(id);
-      } else {
-        nextArr.add(id);
-      }
-      return nextArr;
-    });
-  };
-
   const inputStyles = {
-    listStyleType: listStyleType,
-    listStylePosition: listStylePosition,
+    listStyleType,
+    listStylePosition,
   };
 
   const listStyles = {
@@ -37,9 +25,9 @@ function List({
       style={{
         ...listStyles,
         textDecoration:
-          ordered && checkedList.has(index) ? "line-through" : "none",
+          checked && checkedList.has(index) ? "line-through" : "none",
       }}
-      onClick={checked ? () => toggleChecked(index) : undefined}
+      onClick={checked ? () => onToggle(index) : undefined}
     >
       {item}
     </li>

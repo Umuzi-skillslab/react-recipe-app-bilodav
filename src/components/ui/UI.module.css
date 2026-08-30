@@ -31,7 +31,7 @@
   }
 
   .tabbed-headers .active {
-    border-bottom: 1px solid var(--border-accent);
+    border-bottom: 2px solid var(--border-accent);
     padding: 10px 30px;
     border-radius: 0;
     color: var(--text-accent);

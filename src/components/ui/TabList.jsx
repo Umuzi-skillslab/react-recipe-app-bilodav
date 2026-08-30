@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./UI.module.css";
+import { capitalizeString } from "../../utils/helpers";
 
 function TabList({ headers = [], content = [] }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,7 +13,7 @@ function TabList({ headers = [], content = [] }) {
         {headers.map((heading, index) => (
           <div key={index} id={index} onClick={() => handleClick(index)}>
             <span className={activeIndex === index ? styles["active"] : null}>
-              {heading}
+              {capitalizeString(heading)}
             </span>
           </div>
         ))}

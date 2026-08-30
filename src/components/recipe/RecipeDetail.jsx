@@ -7,6 +7,7 @@ import VideoPlayer from "../media/VideoPlayer";
 import { useState, useEffect } from "react";
 import List from "../ui/List";
 import TabList from "../ui/TabList";
+import { capitalizeString } from "../../utils/helpers";
 function RecipeDetail({
   recipe: {
     id,
@@ -25,6 +26,19 @@ function RecipeDetail({
   const { isFavorite, toggleFavorite } = useFavorites();
   const [hasError, setHasError] = useState(false);
   const navigate = useNavigate();
+  const [checkedList, setCheckedList] = useState(new Set([]));
+
+  const toggleChecked = (id) => {
+    setCheckedList((prev) => {
+      const nextArr = new Set(prev);
+      if (nextArr.has(id)) {
+        nextArr.delete(id);
+      } else {
+        nextArr.add(id);
+      }
+      return nextArr;
+    });
+  };
 
   // Reset error state if the image prop changes (e.g. list re-filters)
   useEffect(() => {
@@ -62,7 +76,7 @@ function RecipeDetail({
             <span>Prep & Cook</span>
           </div>
           <div className={styles["recipe-details-block"]}>
-            <span>{difficulty}</span>
+            <span>{capitalizeString(difficulty)}</span>
             <span>Prep & Cook</span>
           </div>
           <div className={styles["recipe-details-block"]}>
@@ -77,16 +91,18 @@ function RecipeDetail({
             headers={["instructions", "ingredients"]}
             content={[
               <List
+                key={"instructions"}
                 list={instructions}
                 listStyleType={"decimal"}
+                checkedList={checkedList}
+                onToggle={toggleChecked}
                 ordered
                 checked
               />,
               <List
                 list={ingredients}
-                listStyleType={"circle"}
-                ordered
-                checked
+                key={"ingredients"}
+                listStyleType={"decimal"}
               />,
             ]}
           />
