@@ -13,8 +13,6 @@
   }
 
   .tabbed-headers span {
-    /* border-top: 1px solid var(--border-dark);
-    border-right: 1px solid var(--border-dark); */
     padding: 10px 30px;
     border: 1px solid transparent;
     border-radius: 0 var(--radius-lg);
