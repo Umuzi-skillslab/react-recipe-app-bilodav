@@ -14,13 +14,6 @@ function DayCard({ date }) {
     { key: "dinner", label: "Dinner", recipeId: meal.dinner },
   ];
 
-  function handleAddMeal(mealType) {
-    console.log(`Open modal for ${mealType} on ${date}`);
-  }
-
-  function handleOptions(mealType, recipeId) {
-    console.log(`Options for ${mealType} recipe ${recipeId} on ${date}`);
-  }
   return (
     <div className={styles["day-card"]}>
       {mealSlots.map(({ key, label, recipeId }) => (

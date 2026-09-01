@@ -25,6 +25,11 @@ function MealSlot({ label, recipeId, date, mealType }) {
     setIsModalOpen(true);
   };
 
+  const handleEditClick = () => {
+    setisOptionsActive(false);
+    setIsModalOpen(true);
+  };
+
   const handleOptionsClick = () => {
     setisOptionsActive((prev) => !prev);
   };
@@ -56,13 +61,18 @@ function MealSlot({ label, recipeId, date, mealType }) {
         )}
         {isOptionsActive && (
           <div className={styles["options-active"]}>
-            <span onClick={() => {}}>Edit</span>
+            <span onClick={handleEditClick}>Edit</span>
             <span onClick={handleDelete}>Delete</span>
           </div>
         )}
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <MealPicker />
+        <MealPicker
+          key={`${date}-${mealType}-${isModalOpen}`}
+          onDone={closeModal}
+          date={dateFormat(date)}
+          mealType={mealType}
+        />
       </Modal>
     </div>
   );
