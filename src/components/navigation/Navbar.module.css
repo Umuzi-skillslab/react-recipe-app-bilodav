@@ -68,6 +68,14 @@
   .nav-filler {
     display: none;
   }
+
+  .counter {
+    position: absolute;
+    top: 25px;
+    background-color: var(--btn-ghost-bg);
+    padding: 1px 5px;
+    border-radius: var(--radius-full);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -161,6 +169,21 @@
     background-repeat: no-repeat;
     margin-left: 20px;
     margin-top: 10px;
+  }
+
+  .counter {
+    position: relative;
+    top: 0;
+    margin-left: 15px;
+    background-color: var(--btn-ghost-bg);
+    padding: 3px 5px;
+    border-radius: var(--radius-sm);
+    color: var(--btn-ghost-text);
+  }
+
+  .active .counter {
+    background-color: var(--btn-accent-bg);
+    color: var(--btn-accent-text);
   }
 }
 
