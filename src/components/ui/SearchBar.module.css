@@ -13,16 +13,16 @@
   justify-self: flex-start;
 }
 
-.input-group select:first-of-type {
+.search-bar .input-group select:first-of-type {
   min-width: 122px;
-  max-width: 20%;
+  max-width: 2%;
 }
 
 .input-group input {
   min-width: 122px;
 }
 
-select:last-of-type {
+.search-bar select:last-of-type {
   min-width: 110px;
   max-width: 15%;
   margin-left: auto;
