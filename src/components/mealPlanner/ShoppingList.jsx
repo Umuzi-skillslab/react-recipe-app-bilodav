@@ -7,6 +7,8 @@ function ShoppingList({ title = "Pantry List", date = new Date() }) {
   const { getMealForDate } = useMealPlanner();
   const entry = getMealForDate(dateFormat(date));
   const meal = entry?.meal || {};
+  const hasMeal =
+    entry?.meal?.breakfast || entry?.meal?.lunch || entry?.meal?.dinner;
 
   function findRecipeById(id) {
     return recipesData.find((recipe) => recipe.id === id);
@@ -16,13 +18,13 @@ function ShoppingList({ title = "Pantry List", date = new Date() }) {
     { slot: "breakfast", recipe: findRecipeById(meal.breakfast) },
     { slot: "lunch", recipe: findRecipeById(meal.lunch) },
     { slot: "dinner", recipe: findRecipeById(meal.dinner) },
-  ];
+  ].filter(({ recipe }) => recipe?.ingredients?.length); //filter out empty ingredients so that I do not render empty lists
   console.log(recipeList);
 
   return (
     <div className={styles["shopping-list"]}>
       <h2>{title}</h2>
-      {entry?.meal ? (
+      {hasMeal && recipeList.length > 0 ? (
         <div className={styles["container"]}>
           {recipeList.map(({ slot, recipe }) => (
             <div className={styles["list"]} key={slot}>

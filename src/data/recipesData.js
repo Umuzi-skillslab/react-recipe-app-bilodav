@@ -861,7 +861,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 42,
     servings: 2,
-    image: "/assets/images/recipe-30.jpg",
+    image: "/assets/images/recipes/springRolls.jpg",
     videoUrl: "/assets/videos/recipe-30-tutorial.mp4",
     ingredients: [
       "2 cups vegetables",
@@ -889,7 +889,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 49,
     servings: 3,
-    image: "/assets/images/recipe-31.jpg",
+    image: "/assets/images/recipes/vegetableSamos.jpg",
     videoUrl: "/assets/videos/recipe-31-tutorial.mp4",
     ingredients: [
       "2 cups vegetables",
@@ -917,7 +917,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 56,
     servings: 4,
-    image: "/assets/images/recipe-32.jpg",
+    image: "/assets/images/recipes/pancakes.jpg",
     videoUrl: "/assets/videos/recipe-32-tutorial.mp4",
     ingredients: [
       "4 eggs",
@@ -946,7 +946,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 63,
     servings: 5,
-    image: "/assets/images/recipe-33.jpg",
+    image: "/assets/images/recipes/frenchToast.jpg",
     videoUrl: "/assets/videos/recipe-33-tutorial.mp4",
     ingredients: [
       "4 eggs",
@@ -975,7 +975,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 70,
     servings: 6,
-    image: "/assets/images/recipe-34.jpg",
+    image: "/assets/images/recipes/eggsBenedict.jpg",
     videoUrl: "/assets/videos/recipe-34-tutorial.mp4",
     ingredients: [
       "4 eggs",
@@ -1004,7 +1004,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 16,
     servings: 2,
-    image: "/assets/images/recipe-35.jpg",
+    image: "/assets/images/recipes/shakshuka.jpg",
     videoUrl: "/assets/videos/recipe-35-tutorial.mp4",
     ingredients: [
       "4 eggs",
@@ -1091,7 +1091,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 37,
     servings: 5,
-    image: "/assets/images/recipe-38.jpg",
+    image: "/assets/images/recipes/omlette.jpg",
     videoUrl: "/assets/videos/recipe-38-tutorial.mp4",
     ingredients: [
       "4 eggs",
@@ -1178,7 +1178,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 58,
     servings: 3,
-    image: "/assets/images/recipe-41.jpg",
+    image: "/assets/images/recipes/granolaBowl.jpg",
     videoUrl: "/assets/videos/recipe-41-tutorial.mp4",
     ingredients: [
       "4 eggs",
@@ -1207,7 +1207,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 65,
     servings: 4,
-    image: "/assets/images/recipe-42.jpg",
+    image: "/assets/images/recipes/chocolateCake.jpg",
     videoUrl: "/assets/videos/recipe-42-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1236,7 +1236,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 72,
     servings: 5,
-    image: "/assets/images/recipe-43.jpg",
+    image: "/assets/images/recipes/cheeseCake.jpg",
     videoUrl: "/assets/videos/recipe-43-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1265,7 +1265,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 18,
     servings: 6,
-    image: "/assets/images/recipe-44.jpg",
+    image: "/assets/images/recipes/tiramisu.jpg",
     videoUrl: "/assets/videos/recipe-44-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1323,7 +1323,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 32,
     servings: 3,
-    image: "/assets/images/recipe-46.jpg",
+    image: "/assets/images/recipes/brownies.jpg",
     videoUrl: "/assets/videos/recipe-46-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1352,7 +1352,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 39,
     servings: 4,
-    image: "/assets/images/recipe-47.jpg",
+    image: "/assets/images/recipes/pannaCotta.jpg",
     videoUrl: "/assets/videos/recipe-47-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1381,7 +1381,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 46,
     servings: 5,
-    image: "/assets/images/recipe-48.jpg",
+    image: "/assets/images/recipes/cremeBrulee.jpg",
     videoUrl: "/assets/videos/recipe-48-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1410,7 +1410,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 53,
     servings: 6,
-    image: "/assets/images/recipe-49.jpg",
+    image: "/assets/images/recipes/chocolateMousse.jpg",
     videoUrl: "/assets/videos/recipe-49-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1439,7 +1439,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 60,
     servings: 2,
-    image: "/assets/images/recipe-50.jpg",
+    image: "/assets/images/recipes/strawberryShortCake.jpg",
     videoUrl: "/assets/videos/recipe-50-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1468,7 +1468,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 67,
     servings: 3,
-    image: "/assets/images/recipe-51.jpg",
+    image: "/assets/images/recipes/lemonTart.jpg",
     videoUrl: "/assets/videos/recipe-51-tutorial.mp4",
     ingredients: [
       "2 cups flour",
@@ -1497,7 +1497,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 74,
     servings: 4,
-    image: "/assets/images/recipe-52.jpg",
+    image: "/assets/images/recipes/chickenAlfredo.jpg",
     videoUrl: "/assets/videos/recipe-52-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -1527,7 +1527,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 20,
     servings: 5,
-    image: "/assets/images/recipe-53.jpg",
+    image: "/assets/images/recipes/pestoPasta.jpg",
     videoUrl: "/assets/videos/recipe-53-tutorial.mp4",
     ingredients: [
       "400g pasta",
@@ -1587,7 +1587,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 34,
     servings: 2,
-    image: "/assets/images/recipe-55.jpg",
+    image: "/assets/images/recipes/risotto.jpg",
     videoUrl: "/assets/videos/recipe-55-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1617,7 +1617,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 41,
     servings: 3,
-    image: "/assets/images/recipe-56.jpg",
+    image: "/assets/images/recipes/eggPlantParmesan.jpg",
     videoUrl: "/assets/videos/recipe-56-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1647,7 +1647,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 48,
     servings: 4,
-    image: "/assets/images/recipe-57.jpg",
+    image: "/assets/images/recipes/chickenPiccata.jpeg",
     videoUrl: "/assets/videos/recipe-57-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -1707,7 +1707,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 62,
     servings: 6,
-    image: "/assets/images/recipe-59.jpg",
+    image: "/assets/images/recipes/chickenFajitas.jpg",
     videoUrl: "/assets/videos/recipe-59-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -1737,7 +1737,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 69,
     servings: 2,
-    image: "/assets/images/recipe-60.jpg",
+    image: "/assets/images/recipes/quesadillas.jpg",
     videoUrl: "/assets/videos/recipe-60-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1767,7 +1767,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 15,
     servings: 3,
-    image: "/assets/images/recipe-61.jpg",
+    image: "/assets/images/recipes/enchiladaRice.jpg",
     videoUrl: "/assets/videos/recipe-61-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1797,7 +1797,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 22,
     servings: 4,
-    image: "/assets/images/recipe-62.jpg",
+    image: "/assets/images/recipes/coconutShrimp.jpg",
     videoUrl: "/assets/videos/recipe-62-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1827,7 +1827,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 29,
     servings: 5,
-    image: "/assets/images/recipe-63.jpg",
+    image: "/assets/images/recipes/greenCurry.jpg",
     videoUrl: "/assets/videos/recipe-63-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1857,7 +1857,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 36,
     servings: 6,
-    image: "/assets/images/recipe-64.jpg",
+    image: "/assets/images/recipes/padSeeEw.jpg",
     videoUrl: "/assets/videos/recipe-64-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1887,7 +1887,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 43,
     servings: 2,
-    image: "/assets/images/recipe-65.jpg",
+    image: "/assets/images/recipes/teriyakiChicken.jpg",
     videoUrl: "/assets/videos/recipe-65-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -1917,7 +1917,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 50,
     servings: 3,
-    image: "/assets/images/recipe-66.jpg",
+    image: "/assets/images/recipes/sushiBowl.jpg",
     videoUrl: "/assets/videos/recipe-66-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -1947,7 +1947,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 57,
     servings: 4,
-    image: "/assets/images/recipe-67.jpg",
+    image: "/assets/images/recipes/chickenKatsu.jpg",
     videoUrl: "/assets/videos/recipe-67-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -1977,7 +1977,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 64,
     servings: 5,
-    image: "/assets/images/recipe-68.jpg",
+    image: "/assets/images/recipes/vegetableFriedRice.jpg",
     videoUrl: "/assets/videos/recipe-68-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2007,7 +2007,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 71,
     servings: 6,
-    image: "/assets/images/recipe-69.jpg",
+    image: "/assets/images/recipes/sweetAndSourChicken.jpg",
     videoUrl: "/assets/videos/recipe-69-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2037,7 +2037,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 17,
     servings: 2,
-    image: "/assets/images/recipe-70.jpg",
+    image: "/assets/images/recipes/kungPaoChicken.jpg",
     videoUrl: "/assets/videos/recipe-70-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2097,7 +2097,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 31,
     servings: 4,
-    image: "/assets/images/recipe-72.jpg",
+    image: "/assets/images/recipes/lambKebabs.jpg",
     videoUrl: "/assets/videos/recipe-72-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2127,7 +2127,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 38,
     servings: 5,
-    image: "/assets/images/recipe-73.jpg",
+    image: "/assets/images/recipes/chickenShawarma.jpg",
     videoUrl: "/assets/videos/recipe-73-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2187,7 +2187,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 52,
     servings: 2,
-    image: "/assets/images/recipe-75.jpg",
+    image: "/assets/images/recipes/moroccanChicken.jpg",
     videoUrl: "/assets/videos/recipe-75-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2217,7 +2217,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 59,
     servings: 3,
-    image: "/assets/images/recipe-76.jpg",
+    image: "/assets/images/recipes/vegetableTagine.jpg",
     videoUrl: "/assets/videos/recipe-76-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2247,7 +2247,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 66,
     servings: 4,
-    image: "/assets/images/recipe-77.jpg",
+    image: "/assets/images/recipes/paella.jpg",
     videoUrl: "/assets/videos/recipe-77-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2277,7 +2277,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 73,
     servings: 5,
-    image: "/assets/images/recipe-78.jpg",
+    image: "/assets/images/recipes/spanishOmelette.jpg",
     videoUrl: "/assets/videos/recipe-78-tutorial.mp4",
     ingredients: [
       "4 eggs",
@@ -2306,7 +2306,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 19,
     servings: 6,
-    image: "/assets/images/recipe-79.jpg",
+    image: "/assets/images/recipes/chickenSchnitzel.jpg",
     videoUrl: "/assets/videos/recipe-79-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2366,7 +2366,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 33,
     servings: 3,
-    image: "/assets/images/recipe-81.jpg",
+    image: "/assets/images/recipes/moussaka.jpg",
     videoUrl: "/assets/videos/recipe-81-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2396,7 +2396,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 40,
     servings: 4,
-    image: "/assets/images/recipe-82.jpg",
+    image: "/assets/images/recipes/chickenSouvlaki.jpg",
     videoUrl: "/assets/videos/recipe-82-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2426,7 +2426,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 47,
     servings: 5,
-    image: "/assets/images/recipe-83.jpg",
+    image: "/assets/images/recipes/spanakopita.jpg",
     videoUrl: "/assets/videos/recipe-83-tutorial.mp4",
     ingredients: [
       "2 cups vegetables",
@@ -2454,7 +2454,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 54,
     servings: 6,
-    image: "/assets/images/recipe-84.jpg",
+    image: "/assets/images/recipes/falafelWrap.jpg",
     videoUrl: "/assets/videos/recipe-84-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2514,7 +2514,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 68,
     servings: 3,
-    image: "/assets/images/recipe-86.jpg",
+    image: "/assets/images/recipes/garlicButterShrimp.jpg",
     videoUrl: "/assets/videos/recipe-86-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2574,7 +2574,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 21,
     servings: 5,
-    image: "/assets/images/recipe-88.jpg",
+    image: "/assets/images/recipes/macAndCheese.jpg",
     videoUrl: "/assets/videos/recipe-88-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2604,7 +2604,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 28,
     servings: 6,
-    image: "/assets/images/recipe-89.jpg",
+    image: "/assets/images/recipes/meatloaf.jpg",
     videoUrl: "/assets/videos/recipe-89-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2634,7 +2634,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 35,
     servings: 2,
-    image: "/assets/images/recipe-90.jpg",
+    image: "/assets/images/recipes/chickenPotPie.jpg",
     videoUrl: "/assets/videos/recipe-90-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2664,7 +2664,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 42,
     servings: 3,
-    image: "/assets/images/recipe-91.jpg",
+    image: "/assets/images/recipes/clamChowder.jpg",
     videoUrl: "/assets/videos/recipe-91-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2694,7 +2694,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 49,
     servings: 4,
-    image: "/assets/images/recipe-92.jpg",
+    image: "/assets/images/recipes/cornChowder.jpg",
     videoUrl: "/assets/videos/recipe-92-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2724,7 +2724,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 56,
     servings: 5,
-    image: "/assets/images/recipe-93.jpg",
+    image: "/assets/images/recipes/vegetableStirFry.jpg",
     videoUrl: "/assets/videos/recipe-93-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2754,7 +2754,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 63,
     servings: 6,
-    image: "/assets/images/recipe-94.jpg",
+    image: "/assets/images/recipes/tofuTeriyaki.jpg",
     videoUrl: "/assets/videos/recipe-94-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2784,7 +2784,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 70,
     servings: 2,
-    image: "/assets/images/recipe-95.jpg",
+    image: "/assets/images/recipes/chickpeaCurry.jpg",
     videoUrl: "/assets/videos/recipe-95-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2814,7 +2814,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 16,
     servings: 3,
-    image: "/assets/images/recipe-96.jpg",
+    image: "/assets/images/recipes/palakPaneer.jpg",
     videoUrl: "/assets/videos/recipe-96-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2844,7 +2844,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 23,
     servings: 4,
-    image: "/assets/images/recipe-97.jpg",
+    image: "/assets/images/recipes/butterNaan.jpg",
     videoUrl: "/assets/videos/recipe-97-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2874,7 +2874,7 @@ export const recipesData = [
     difficulty: "hard",
     cookTime: 30,
     servings: 5,
-    image: "/assets/images/recipe-98.jpg",
+    image: "/assets/images/recipes/chickenBiryani.jpg",
     videoUrl: "/assets/videos/recipe-98-tutorial.mp4",
     ingredients: [
       "500g chicken",
@@ -2904,7 +2904,7 @@ export const recipesData = [
     difficulty: "easy",
     cookTime: 37,
     servings: 6,
-    image: "/assets/images/recipe-99.jpg",
+    image: "/assets/images/recipes/vegetableBiriyani.jpg",
     videoUrl: "/assets/videos/recipe-99-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
@@ -2934,7 +2934,7 @@ export const recipesData = [
     difficulty: "medium",
     cookTime: 44,
     servings: 2,
-    image: "/assets/images/recipe-100.jpg",
+    image: "/assets/images/recipes/dalTadka.jpg",
     videoUrl: "/assets/videos/recipe-100-tutorial.mp4",
     ingredients: [
       "2 cups mixed vegetables",
