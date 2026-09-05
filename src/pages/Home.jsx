@@ -6,12 +6,16 @@ import { recipesData } from "../data/recipesData";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import { useMealPlanner } from "../components/context/MealPlannerContext";
+import { dateFormat } from "../utils/helpers";
 function Home() {
   const navigate = useNavigate();
   const { getMealForDate } = useMealPlanner();
 
-  const plannerEntry = getMealForDate(new Date());
-  const plannerMeals = plannerEntry?.meal;
+  const plannerEntry = getMealForDate(dateFormat(new Date()));
+  const hasMeals =
+    plannerEntry?.meal?.breakfast ||
+    plannerEntry?.meal?.lunch ||
+    plannerEntry?.meal?.dinner;
 
   const randomTip = Math.floor(Math.random() * 34) + 1;
   const breakfastList = recipesData.filter(
@@ -54,10 +58,10 @@ function Home() {
           </div>
         </div>
         <div className={styles["info-col"]}>
-          {plannerMeals && (
+          {hasMeals && (
             <ShoppingList title="Dont forget these items for your meals" />
           )}
-          {!plannerMeals && (
+          {!hasMeals && (
             <div
               className={styles["meal-planner"]}
               onClick={() => navigate("/meal-planner")}

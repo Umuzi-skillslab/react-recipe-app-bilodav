@@ -862,7 +862,7 @@ export const recipesData = [
     cookTime: 42,
     servings: 2,
     image: "/assets/images/recipes/springRolls.jpg",
-    videoUrl: "/assets/videos/recipe-30-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/ldVuxgEc1m0?si=KLZNDEnUeC6S6YmZ",
     ingredients: [
       "2 cups vegetables",
       "100g cheese",
@@ -890,7 +890,7 @@ export const recipesData = [
     cookTime: 49,
     servings: 3,
     image: "/assets/images/recipes/vegetableSamos.jpg",
-    videoUrl: "/assets/videos/recipe-31-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/XEg8-cUoNiE?si=6hKQewMIPA23dnNt",
     ingredients: [
       "2 cups vegetables",
       "100g cheese",
@@ -918,7 +918,7 @@ export const recipesData = [
     cookTime: 56,
     servings: 4,
     image: "/assets/images/recipes/pancakes.jpg",
-    videoUrl: "/assets/videos/recipe-32-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/hhMLGdgpF2o?si=Sz08Gjo_tD2O4HUg",
     ingredients: [
       "4 eggs",
       "2 slices bread",
@@ -947,7 +947,7 @@ export const recipesData = [
     cookTime: 63,
     servings: 5,
     image: "/assets/images/recipes/frenchToast.jpg",
-    videoUrl: "/assets/videos/recipe-33-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/cuivV5iSHoc?si=sTuBvrOxTqebBieQ",
     ingredients: [
       "4 eggs",
       "2 slices bread",
@@ -976,7 +976,7 @@ export const recipesData = [
     cookTime: 70,
     servings: 6,
     image: "/assets/images/recipes/eggsBenedict.jpg",
-    videoUrl: "/assets/videos/recipe-34-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/gBJjRYk0yC0?si=X6iwYEqBb3IVrD4O",
     ingredients: [
       "4 eggs",
       "2 slices bread",
@@ -1005,7 +1005,7 @@ export const recipesData = [
     cookTime: 16,
     servings: 2,
     image: "/assets/images/recipes/shakshuka.jpg",
-    videoUrl: "/assets/videos/recipe-35-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/m5Kn9WmOCrw?si=xvUuT2cFC9bHGN6W",
     ingredients: [
       "4 eggs",
       "2 slices bread",
@@ -1092,7 +1092,7 @@ export const recipesData = [
     cookTime: 37,
     servings: 5,
     image: "/assets/images/recipes/omlette.jpg",
-    videoUrl: "/assets/videos/recipe-38-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/bF4bp-lRbDg?si=HMP0fSTJDKxRLjbp",
     ingredients: [
       "4 eggs",
       "2 slices bread",
@@ -1179,7 +1179,7 @@ export const recipesData = [
     cookTime: 58,
     servings: 3,
     image: "/assets/images/recipes/granolaBowl.jpg",
-    videoUrl: "/assets/videos/recipe-41-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/2nWi37RKzmw?si=bP95mvEF1thMRWjd",
     ingredients: [
       "4 eggs",
       "2 slices bread",
@@ -1208,7 +1208,7 @@ export const recipesData = [
     cookTime: 65,
     servings: 4,
     image: "/assets/images/recipes/chocolateCake.jpg",
-    videoUrl: "/assets/videos/recipe-42-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/EaljSnLrJW8?si=VcucqKHSB_6jUzcm",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1237,7 +1237,7 @@ export const recipesData = [
     cookTime: 72,
     servings: 5,
     image: "/assets/images/recipes/cheeseCake.jpg",
-    videoUrl: "/assets/videos/recipe-43-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/ayTT_t1MQS8?si=fGmPRG3fbHZdLUlC",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1266,7 +1266,7 @@ export const recipesData = [
     cookTime: 18,
     servings: 6,
     image: "/assets/images/recipes/tiramisu.jpg",
-    videoUrl: "/assets/videos/recipe-44-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/uNowLq9fm9I?si=mHfgKWw8WXN34v5T",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1324,7 +1324,7 @@ export const recipesData = [
     cookTime: 32,
     servings: 3,
     image: "/assets/images/recipes/brownies.jpg",
-    videoUrl: "/assets/videos/recipe-46-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/2Hw2pkJvdY0?si=PAyjm6Px1AJFlWf1",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1353,7 +1353,7 @@ export const recipesData = [
     cookTime: 39,
     servings: 4,
     image: "/assets/images/recipes/pannaCotta.jpg",
-    videoUrl: "/assets/videos/recipe-47-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/8I5pUkGQyT8?si=YbfQRkBBNytufm3f",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1382,7 +1382,7 @@ export const recipesData = [
     cookTime: 46,
     servings: 5,
     image: "/assets/images/recipes/cremeBrulee.jpg",
-    videoUrl: "/assets/videos/recipe-48-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/SDawdqxkqnA?si=rc-m96lnyjdS9b_8",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1411,7 +1411,7 @@ export const recipesData = [
     cookTime: 53,
     servings: 6,
     image: "/assets/images/recipes/chocolateMousse.jpg",
-    videoUrl: "/assets/videos/recipe-49-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/ZtXkxYvas5U?si=5cKvfqc8iNP1-Gl9",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1440,7 +1440,7 @@ export const recipesData = [
     cookTime: 60,
     servings: 2,
     image: "/assets/images/recipes/strawberryShortCake.jpg",
-    videoUrl: "/assets/videos/recipe-50-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/dRdinLuopTo?si=6WuFKmM03VCoENpI",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1469,7 +1469,7 @@ export const recipesData = [
     cookTime: 67,
     servings: 3,
     image: "/assets/images/recipes/lemonTart.jpg",
-    videoUrl: "/assets/videos/recipe-51-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/K29it3YtZ-w?si=wPjOccHPQ02TtJiL",
     ingredients: [
       "2 cups flour",
       "1 cup sugar",
@@ -1498,7 +1498,7 @@ export const recipesData = [
     cookTime: 74,
     servings: 4,
     image: "/assets/images/recipes/chickenAlfredo.jpg",
-    videoUrl: "/assets/videos/recipe-52-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/zwUIRMTO4N4?si=LwcMtlXbdO_tuFaw",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -1528,7 +1528,7 @@ export const recipesData = [
     cookTime: 20,
     servings: 5,
     image: "/assets/images/recipes/pestoPasta.jpg",
-    videoUrl: "/assets/videos/recipe-53-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/rJodtPQMyag?si=EPicr-kx_ogrmBjK",
     ingredients: [
       "400g pasta",
       "2 cloves garlic",
@@ -1588,7 +1588,7 @@ export const recipesData = [
     cookTime: 34,
     servings: 2,
     image: "/assets/images/recipes/risotto.jpg",
-    videoUrl: "/assets/videos/recipe-55-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/eaRlFcQgdwI?si=Z6GhjYm5VtwbBsdm",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1618,7 +1618,7 @@ export const recipesData = [
     cookTime: 41,
     servings: 3,
     image: "/assets/images/recipes/eggPlantParmesan.jpg",
-    videoUrl: "/assets/videos/recipe-56-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/XXA4ZcfLISU?si=2bCoAmUzusjBw1wD",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1648,7 +1648,7 @@ export const recipesData = [
     cookTime: 48,
     servings: 4,
     image: "/assets/images/recipes/chickenPiccata.jpeg",
-    videoUrl: "/assets/videos/recipe-57-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/ArQ567m3oVo?si=1jxY8nKpXc75bbOJ",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -1708,7 +1708,7 @@ export const recipesData = [
     cookTime: 62,
     servings: 6,
     image: "/assets/images/recipes/chickenFajitas.jpg",
-    videoUrl: "/assets/videos/recipe-59-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/sjflAFsbpb4?si=3OoUzZ2xTyWRDWqq",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -1738,7 +1738,7 @@ export const recipesData = [
     cookTime: 69,
     servings: 2,
     image: "/assets/images/recipes/quesadillas.jpg",
-    videoUrl: "/assets/videos/recipe-60-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/jlm8QFe8nw8?si=7vqmVm35JBwz5n5F",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1768,7 +1768,7 @@ export const recipesData = [
     cookTime: 15,
     servings: 3,
     image: "/assets/images/recipes/enchiladaRice.jpg",
-    videoUrl: "/assets/videos/recipe-61-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/YS-HiF9U314?si=_zlPnZQvu1pKW5Ha",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1798,7 +1798,7 @@ export const recipesData = [
     cookTime: 22,
     servings: 4,
     image: "/assets/images/recipes/coconutShrimp.jpg",
-    videoUrl: "/assets/videos/recipe-62-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/HS1HndCkl0w?si=arG718rSyT14UWsr",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1828,7 +1828,7 @@ export const recipesData = [
     cookTime: 29,
     servings: 5,
     image: "/assets/images/recipes/greenCurry.jpg",
-    videoUrl: "/assets/videos/recipe-63-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/3Z9lEOGmSjw?si=lrQ6p4NL--1h1Obq",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1858,7 +1858,7 @@ export const recipesData = [
     cookTime: 36,
     servings: 6,
     image: "/assets/images/recipes/padSeeEw.jpg",
-    videoUrl: "/assets/videos/recipe-64-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/JpPiLwuGmks?si=m9OgG2imEzjGU6H_",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1888,7 +1888,7 @@ export const recipesData = [
     cookTime: 43,
     servings: 2,
     image: "/assets/images/recipes/teriyakiChicken.jpg",
-    videoUrl: "/assets/videos/recipe-65-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/ldzxXhFas_s?si=IOZ1gLEeEyzJ0RJr",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -1918,7 +1918,7 @@ export const recipesData = [
     cookTime: 50,
     servings: 3,
     image: "/assets/images/recipes/sushiBowl.jpg",
-    videoUrl: "/assets/videos/recipe-66-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/PN7hs5R54xE?si=xA3bsjpE-fFvkamQ",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -1948,7 +1948,7 @@ export const recipesData = [
     cookTime: 57,
     servings: 4,
     image: "/assets/images/recipes/chickenKatsu.jpg",
-    videoUrl: "/assets/videos/recipe-67-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/WfRbviqgiSA?si=P9DpRRbi0CQrd95M",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -1978,7 +1978,7 @@ export const recipesData = [
     cookTime: 64,
     servings: 5,
     image: "/assets/images/recipes/vegetableFriedRice.jpg",
-    videoUrl: "/assets/videos/recipe-68-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/g1Zbx81LlbE?si=ofXB0Z2msJwsNmBt",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2008,7 +2008,7 @@ export const recipesData = [
     cookTime: 71,
     servings: 6,
     image: "/assets/images/recipes/sweetAndSourChicken.jpg",
-    videoUrl: "/assets/videos/recipe-69-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/dzq4cTnv_N4?si=X4iZfRy29BnsabVv",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2038,7 +2038,7 @@ export const recipesData = [
     cookTime: 17,
     servings: 2,
     image: "/assets/images/recipes/kungPaoChicken.jpg",
-    videoUrl: "/assets/videos/recipe-70-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/tjVu_2eQ9SE?si=lCXwxt3Bh85iqtEi",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2098,7 +2098,7 @@ export const recipesData = [
     cookTime: 31,
     servings: 4,
     image: "/assets/images/recipes/lambKebabs.jpg",
-    videoUrl: "/assets/videos/recipe-72-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/vuEKuuV73zk?si=PVyqGaqoTBD0wfi6",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2128,7 +2128,7 @@ export const recipesData = [
     cookTime: 38,
     servings: 5,
     image: "/assets/images/recipes/chickenShawarma.jpg",
-    videoUrl: "/assets/videos/recipe-73-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/RooEdtq_Lfo?si=dIYOkftVWfdmgf02",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2188,7 +2188,7 @@ export const recipesData = [
     cookTime: 52,
     servings: 2,
     image: "/assets/images/recipes/moroccanChicken.jpg",
-    videoUrl: "/assets/videos/recipe-75-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/R8fyTivC6lM?si=002cGHhaVfJVBBjY",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2218,7 +2218,7 @@ export const recipesData = [
     cookTime: 59,
     servings: 3,
     image: "/assets/images/recipes/vegetableTagine.jpg",
-    videoUrl: "/assets/videos/recipe-76-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/R1cxnNUf3aQ?si=kkWjhOVXTfpnMSn8",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2248,7 +2248,7 @@ export const recipesData = [
     cookTime: 66,
     servings: 4,
     image: "/assets/images/recipes/paella.jpg",
-    videoUrl: "/assets/videos/recipe-77-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/yOEq8yimeqk?si=7zpEE-LK7Bx-KVfN",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2278,7 +2278,7 @@ export const recipesData = [
     cookTime: 73,
     servings: 5,
     image: "/assets/images/recipes/spanishOmelette.jpg",
-    videoUrl: "/assets/videos/recipe-78-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/JceGMNG7rpU?si=9zT-IydGy19NGpcb",
     ingredients: [
       "4 eggs",
       "2 slices bread",
@@ -2307,7 +2307,7 @@ export const recipesData = [
     cookTime: 19,
     servings: 6,
     image: "/assets/images/recipes/chickenSchnitzel.jpg",
-    videoUrl: "/assets/videos/recipe-79-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/YqU1OQr5sBY?si=-S1T-GOqMxS2mWK7",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2367,7 +2367,7 @@ export const recipesData = [
     cookTime: 33,
     servings: 3,
     image: "/assets/images/recipes/moussaka.jpg",
-    videoUrl: "/assets/videos/recipe-81-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/XXxJbivD3k0?si=SuMR78n791Szsf9v",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2397,7 +2397,7 @@ export const recipesData = [
     cookTime: 40,
     servings: 4,
     image: "/assets/images/recipes/chickenSouvlaki.jpg",
-    videoUrl: "/assets/videos/recipe-82-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/ttqZo8id9SQ?si=k2LjbPMBaTsN9lB-",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2427,7 +2427,7 @@ export const recipesData = [
     cookTime: 47,
     servings: 5,
     image: "/assets/images/recipes/spanakopita.jpg",
-    videoUrl: "/assets/videos/recipe-83-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/B788qsWT-Wg?si=BMrLQTyZxtlA8XJ0",
     ingredients: [
       "2 cups vegetables",
       "100g cheese",
@@ -2455,7 +2455,7 @@ export const recipesData = [
     cookTime: 54,
     servings: 6,
     image: "/assets/images/recipes/falafelWrap.jpg",
-    videoUrl: "/assets/videos/recipe-84-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/HBagDRArt3I?si=M7_9M45xMfRCPlCJ",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2515,7 +2515,7 @@ export const recipesData = [
     cookTime: 68,
     servings: 3,
     image: "/assets/images/recipes/garlicButterShrimp.jpg",
-    videoUrl: "/assets/videos/recipe-86-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/t-xM807ZV6w?si=woeeXN3lVkhTLpkK",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2575,7 +2575,7 @@ export const recipesData = [
     cookTime: 21,
     servings: 5,
     image: "/assets/images/recipes/macAndCheese.jpg",
-    videoUrl: "/assets/videos/recipe-88-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/UhByCuLYt2g?si=L34tjTuqb6oitYCz",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2605,7 +2605,7 @@ export const recipesData = [
     cookTime: 28,
     servings: 6,
     image: "/assets/images/recipes/meatloaf.jpg",
-    videoUrl: "/assets/videos/recipe-89-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/CzUwqzSA1Gg?si=gEXmPUqZ8tomlZBx",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2635,7 +2635,7 @@ export const recipesData = [
     cookTime: 35,
     servings: 2,
     image: "/assets/images/recipes/chickenPotPie.jpg",
-    videoUrl: "/assets/videos/recipe-90-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/Nu_BpAghuB4?si=UOntua--bAtMg3Y9",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2665,7 +2665,7 @@ export const recipesData = [
     cookTime: 42,
     servings: 3,
     image: "/assets/images/recipes/clamChowder.jpg",
-    videoUrl: "/assets/videos/recipe-91-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/THEm_DyJPxE?si=UBrzYC3plBMrYojo",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2695,7 +2695,7 @@ export const recipesData = [
     cookTime: 49,
     servings: 4,
     image: "/assets/images/recipes/cornChowder.jpg",
-    videoUrl: "/assets/videos/recipe-92-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/XjBBqQqT5DA?si=mu7pIBN1Hd_iy89R",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2725,7 +2725,7 @@ export const recipesData = [
     cookTime: 56,
     servings: 5,
     image: "/assets/images/recipes/vegetableStirFry.jpg",
-    videoUrl: "/assets/videos/recipe-93-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/lNdFgQ4fBCI?si=vhofk66O3HbJkVeu",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2755,7 +2755,7 @@ export const recipesData = [
     cookTime: 63,
     servings: 6,
     image: "/assets/images/recipes/tofuTeriyaki.jpg",
-    videoUrl: "/assets/videos/recipe-94-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/oKcU_OeTzdU?si=NXuY3UTjKsG-xPeP",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2785,7 +2785,7 @@ export const recipesData = [
     cookTime: 70,
     servings: 2,
     image: "/assets/images/recipes/chickpeaCurry.jpg",
-    videoUrl: "/assets/videos/recipe-95-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/5bsvxIDkm4g?si=YpSbykAWdwA-a0Bc",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2815,7 +2815,7 @@ export const recipesData = [
     cookTime: 16,
     servings: 3,
     image: "/assets/images/recipes/palakPaneer.jpg",
-    videoUrl: "/assets/videos/recipe-96-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/JI4DtsiYm34?si=2JvTsx1fpY-FRmh9",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2845,7 +2845,7 @@ export const recipesData = [
     cookTime: 23,
     servings: 4,
     image: "/assets/images/recipes/butterNaan.jpg",
-    videoUrl: "/assets/videos/recipe-97-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/YEFeLn7nlu0?si=CEF7QgzXaaRY49Pk",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2875,7 +2875,7 @@ export const recipesData = [
     cookTime: 30,
     servings: 5,
     image: "/assets/images/recipes/chickenBiryani.jpg",
-    videoUrl: "/assets/videos/recipe-98-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/YC6jZT5JWJ0?si=RRdwDArRh2GciSLR",
     ingredients: [
       "500g chicken",
       "1 onion",
@@ -2905,7 +2905,7 @@ export const recipesData = [
     cookTime: 37,
     servings: 6,
     image: "/assets/images/recipes/vegetableBiriyani.jpg",
-    videoUrl: "/assets/videos/recipe-99-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/Do7ZdUodDdw?si=J0cEiXsG54pqunXK",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
@@ -2935,7 +2935,7 @@ export const recipesData = [
     cookTime: 44,
     servings: 2,
     image: "/assets/images/recipes/dalTadka.jpg",
-    videoUrl: "/assets/videos/recipe-100-tutorial.mp4",
+    videoUrl: "https://www.youtube.com/embed/EnxugULqoc0?si=FpMJrxVFPU3I1jBG",
     ingredients: [
       "2 cups mixed vegetables",
       "1 onion",
