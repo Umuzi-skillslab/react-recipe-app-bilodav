@@ -5,6 +5,15 @@ import { recipesData } from "../data/recipesData";
 import styles from "./FavoritesPage.module.css";
 import SearchBar from "../components/ui/SearchBar";
 import { useState } from "react";
+import FilterBar from "../components/ui/FilterBar";
+import {
+  filterCategory,
+  filterCookTime,
+  filterCuisine,
+  filterDifficulty,
+  searchFilter,
+  sortRecipes,
+} from "../utils/helpers";
 
 function FavoritesPage() {
   const { isFavorite, favoriteIds } = useFavorites();
@@ -13,57 +22,24 @@ function FavoritesPage() {
   const [searchValue, setSearchValue] = useState("");
   const [searchByValue, setSearchByValue] = useState("");
   const [sortBy, setSortBy] = useState("name-asc");
+  const [cuisineValue, setCuisineValue] = useState("");
+  const [categoryValue, setCategoryValue] = useState("");
+  const [difficultyValue, setDifficultyValue] = useState("");
+  const [cookTimeValue, setCookTimeValue] = useState("");
 
   let favoriteRecipes = recipesData.filter((recipe) => isFavorite(recipe.id));
 
-  let searchRecipes;
+  let searchRecipes = searchFilter(searchByValue, searchValue, favoriteRecipes);
 
-  if (searchByValue === "title" || searchByValue === "") {
-    searchRecipes = favoriteRecipes.filter((recipe) =>
-      recipe.title.toLowerCase().includes(searchValue.toLowerCase()),
-    );
-  } else if (searchByValue === "ingredients") {
-    searchRecipes = favoriteRecipes.filter((recipe) =>
-      recipe.ingredients.some((ingredient) =>
-        ingredient.toLowerCase().includes(searchValue.toLowerCase()),
-      ),
-    );
-  }
+  searchRecipes = sortRecipes(sortBy, searchRecipes);
 
-  const difficultyOrder = { easy: 1, medium: 2, hard: 3 };
+  searchRecipes = filterCuisine(cuisineValue, searchRecipes);
 
-  switch (sortBy) {
-    case "name-asc":
-      searchRecipes = [...searchRecipes].sort((a, b) =>
-        a.title.localeCompare(b.title),
-      );
-      break;
-    case "name-desc":
-      searchRecipes = [...searchRecipes].sort((a, b) =>
-        b.title.localeCompare(a.title),
-      );
-      break;
-    case "time-asc":
-      searchRecipes = [...searchRecipes].sort(
-        (a, b) => a.cookTime - b.cookTime,
-      );
-      break;
-    case "time-desc":
-      searchRecipes = [...searchRecipes].sort(
-        (a, b) => b.cookTime - a.cookTime,
-      );
-      break;
-    case "difficulty-asc":
-      searchRecipes = [...searchRecipes].sort(
-        (a, b) => difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty],
-      );
-      break;
-    case "difficulty-desc":
-      searchRecipes = [...searchRecipes].sort(
-        (a, b) => difficultyOrder[b.difficulty] - difficultyOrder[a.difficulty],
-      );
-      break;
-  }
+  searchRecipes = filterCategory(categoryValue, searchRecipes);
+
+  searchRecipes = filterDifficulty(difficultyValue, searchRecipes);
+
+  searchRecipes = filterCookTime(cookTimeValue, searchRecipes);
 
   return (
     <section className={styles["fav-page"]}>
@@ -96,13 +72,25 @@ function FavoritesPage() {
             sortValue={sortBy}
           />
         </div>
+        <FilterBar
+          cuisineValue={cuisineValue}
+          onCuisineChange={setCuisineValue}
+          categoryValue={categoryValue}
+          onCategoryChange={setCategoryValue}
+          difficultyValue={difficultyValue}
+          onDifficultyChange={setDifficultyValue}
+          cookTimeValue={cookTimeValue}
+          onCookTimeChange={setCookTimeValue}
+        />
       </div>
       <div className={styles["fav-display"]}>
         {searchRecipes && (
           <>
-            {(searchByValue || searchValue) && (
-              <p>Found {searchRecipes.length} Results</p>
-            )}
+            {(searchValue ||
+              cuisineValue ||
+              categoryValue ||
+              difficultyValue ||
+              cookTimeValue) && <p>Found {searchRecipes.length} Results</p>}
             <div className={styles["fav-list"]}>
               {searchRecipes.map((recipe) => (
                 <RecipeCard

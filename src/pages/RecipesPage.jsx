@@ -17,6 +17,7 @@ function RecipesPage() {
       <div>
         <div>
           <SearchBar />
+          <FilterBar />
         </div>
         <RecipeList list={recipesData} />
       </div>
