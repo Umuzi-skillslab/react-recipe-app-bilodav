@@ -23,12 +23,12 @@ function Home() {
   );
   const dinnerList = recipesData.filter((entry) => entry.category === "dinner");
 
-  const [randomTip] = useState(Math.floor(Math.random() * 34) + 1);
+  const [randomTip] = useState(() => Math.floor(Math.random() * 34) + 1);
   const [randomDinner] = useState(
-    dinnerList[Math.floor(Math.random() * dinnerList.length)],
+    () => dinnerList[Math.floor(Math.random() * dinnerList.length)],
   );
   const [randomBreakfast] = useState(
-    breakfastList[Math.floor(Math.random() * breakfastList.length)],
+    () => breakfastList[Math.floor(Math.random() * breakfastList.length)],
   );
 
   return (
