@@ -161,7 +161,7 @@
 
   .nav-filler {
     display: block;
-    height: 350px;
+    height: 340px;
     width: 160px;
     background-image: url("/assets/images/navMessage.png");
     background-size: contain;
