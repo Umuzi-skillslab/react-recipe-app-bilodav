@@ -188,7 +188,7 @@ export function filterCuisine(cuisineValue, arr) {
   ) {
     return arr;
   } else {
-    return [...arr].filter(
+    return arr.filter(
       (recipe) => recipe.cuisine.toLowerCase() === cuisineValue.toLowerCase(),
     );
   }
@@ -202,7 +202,7 @@ export function filterCategory(categoryValue, arr) {
   ) {
     return arr;
   } else {
-    return [...arr].filter(
+    return arr.filter(
       (recipe) => recipe.category.toLowerCase() === categoryValue.toLowerCase(),
     );
   }
@@ -216,7 +216,7 @@ export function filterDifficulty(difficultyValue, arr) {
   ) {
     return arr;
   } else {
-    return [...arr].filter(
+    return arr.filter(
       (recipe) =>
         recipe.difficulty.toLowerCase() === difficultyValue.toLowerCase(),
     );
@@ -227,17 +227,17 @@ export function filterDifficulty(difficultyValue, arr) {
 export function filterCookTime(cookTimeValue, arr) {
   switch (cookTimeValue) {
     case "quick":
-      return [...arr].filter((recipe) => recipe.cookTime <= 20);
+      return arr.filter((recipe) => recipe.cookTime <= 20);
     case "moderate":
-      return [...arr].filter(
+      return arr.filter(
         (recipe) => recipe.cookTime > 20 && recipe.cookTime <= 40,
       );
     case "long":
-      return [...arr].filter(
+      return arr.filter(
         (recipe) => recipe.cookTime > 40 && recipe.cookTime <= 60,
       );
     case "very-long":
-      return [...arr].filter((recipe) => recipe.cookTime > 60);
+      return arr.filter((recipe) => recipe.cookTime > 60);
 
     default:
       return arr;

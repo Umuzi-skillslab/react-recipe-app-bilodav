@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./SearchBar.module.css";
 
 function SearchBar({
@@ -41,5 +42,15 @@ function SearchBar({
     </div>
   );
 }
+
+SearchBar.propTypes = {
+  searchBy: PropTypes.string.isRequired,
+  onSearchBy: PropTypes.func.isRequired,
+  searchValue: PropTypes.string.isRequired,
+  onSearchChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
+  onSortChange: PropTypes.func.isRequired,
+  sortValue: PropTypes.string.isRequired,
+};
 
 export default SearchBar;

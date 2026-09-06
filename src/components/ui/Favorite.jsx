@@ -1,4 +1,4 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 
 function Favorite({
   onClick,
@@ -46,5 +46,13 @@ function Favorite({
     </span>
   );
 }
+
+Favorite.propTypes = {
+  onClick: PropTypes.func,
+  isFull: PropTypes.bool,
+  size: PropTypes.string,
+  color: PropTypes.string,
+  className: PropTypes.string,
+};
 
 export default Favorite;

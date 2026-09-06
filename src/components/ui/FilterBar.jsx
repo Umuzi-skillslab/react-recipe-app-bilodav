@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./filterBar.module.css";
 
 function FilterBar({
@@ -76,5 +77,16 @@ function FilterBar({
     </div>
   );
 }
+
+FilterBar.propTypes = {
+  onCuisineChange: PropTypes.func.isRequired,
+  cuisineValue: PropTypes.string.isRequireds,
+  onCategoryChange: PropTypes.func.isRequired,
+  categoryValue: PropTypes.string.isRequired,
+  onDifficultyChange: PropTypes.func.isRequired,
+  difficultyValue: PropTypes.string.isRequired,
+  onCookTimeChange: PropTypes.func.isRequired,
+  cookTimeValue: PropTypes.string.isRequired,
+};
 
 export default FilterBar;

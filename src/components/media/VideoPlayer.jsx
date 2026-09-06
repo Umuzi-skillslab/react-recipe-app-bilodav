@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Button from "../ui/Button";
 import Modal from "../ui/Modal.jsx";
 import Loader from "../ui/Loader.jsx";
 import styles from "./Video.module.css";
-function VideoPlayer({ videoUrl, className }) {
+function VideoPlayer({ videoUrl, className = "" }) {
   const [isOpen, setIsOpen] = useState(false);
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -37,7 +38,7 @@ function VideoPlayer({ videoUrl, className }) {
       />
 
       <Modal isOpen={isOpen} onClose={closeModal}>
-        <div div className={styles["video-display"]}>
+        <div className={styles["video-display"]}>
           {/* Display Loader while video loads and renders */}
           {isOpen && isLoading && !hasError && (
             <div className={styles["video-loader"]}>
@@ -88,5 +89,10 @@ function VideoPlayer({ videoUrl, className }) {
     </div>
   );
 }
+
+VideoPlayer.propTypes = {
+  videoUrl: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
 
 export default VideoPlayer;
