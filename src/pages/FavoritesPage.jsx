@@ -4,43 +4,16 @@ import RecipeCard from "../components/recipe/RecipeCard";
 import { recipesData } from "../data/recipesData";
 import styles from "./FavoritesPage.module.css";
 import SearchBar from "../components/ui/SearchBar";
-import { useState } from "react";
 import FilterBar from "../components/ui/FilterBar";
-import {
-  filterCategory,
-  filterCookTime,
-  filterCuisine,
-  filterDifficulty,
-  searchFilter,
-  sortRecipes,
-} from "../utils/helpers";
+import { useRecipeFilters } from "../hooks/useRecipeFilters";
 
 function FavoritesPage() {
   const { isFavorite, favoriteIds } = useFavorites();
   const navigate = useNavigate();
 
-  const [searchValue, setSearchValue] = useState("");
-  const [searchByValue, setSearchByValue] = useState("");
-  const [sortBy, setSortBy] = useState("name-asc");
-  const [cuisineValue, setCuisineValue] = useState("");
-  const [categoryValue, setCategoryValue] = useState("");
-  const [difficultyValue, setDifficultyValue] = useState("");
-  const [cookTimeValue, setCookTimeValue] = useState("");
-
-  let favoriteRecipes = recipesData.filter((recipe) => isFavorite(recipe.id));
-
-  let searchRecipes = searchFilter(searchByValue, searchValue, favoriteRecipes);
-
-  searchRecipes = sortRecipes(sortBy, searchRecipes);
-
-  searchRecipes = filterCuisine(cuisineValue, searchRecipes);
-
-  searchRecipes = filterCategory(categoryValue, searchRecipes);
-
-  searchRecipes = filterDifficulty(difficultyValue, searchRecipes);
-
-  searchRecipes = filterCookTime(cookTimeValue, searchRecipes);
-
+  const favoriteRecipes = recipesData.filter((recipe) => isFavorite(recipe.id));
+  const { results, isFiltering, searchBar, filterBar } =
+    useRecipeFilters(favoriteRecipes);
   return (
     <section className={styles["fav-page"]}>
       <div className={styles["header-search"]}>
@@ -63,36 +36,18 @@ function FavoritesPage() {
           </div>
         </div>
         <div className={styles["utility-group"]}>
-          <SearchBar
-            searchBy={searchByValue}
-            onSearchBy={setSearchByValue}
-            onSearchChange={setSearchValue}
-            searchValue={searchValue}
-            onSortChange={setSortBy}
-            sortValue={sortBy}
-          />
+          <SearchBar {...searchBar} />
         </div>
-        <FilterBar
-          cuisineValue={cuisineValue}
-          onCuisineChange={setCuisineValue}
-          categoryValue={categoryValue}
-          onCategoryChange={setCategoryValue}
-          difficultyValue={difficultyValue}
-          onDifficultyChange={setDifficultyValue}
-          cookTimeValue={cookTimeValue}
-          onCookTimeChange={setCookTimeValue}
-        />
+        <FilterBar {...filterBar} />
       </div>
       <div className={styles["fav-display"]}>
-        {searchRecipes && (
+        {results && (
           <>
-            {(searchValue ||
-              cuisineValue ||
-              categoryValue ||
-              difficultyValue ||
-              cookTimeValue) && <p>Found {searchRecipes.length} Results</p>}
+            {isFiltering && results.length > 0 && (
+              <p>Found {results.length} Results</p>
+            )}
             <div className={styles["fav-list"]}>
-              {searchRecipes.map((recipe) => (
+              {results.map((recipe) => (
                 <RecipeCard
                   key={recipe.id}
                   id={recipe.id}
@@ -107,7 +62,7 @@ function FavoritesPage() {
             </div>
           </>
         )}
-        {favoriteRecipes.length > 0 && searchRecipes.length === 0 && (
+        {favoriteRecipes.length > 0 && results.length === 0 && (
           <p>There is none that matches your search</p>
         )}
         {favoriteRecipes.length === 0 && (

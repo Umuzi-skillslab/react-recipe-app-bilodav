@@ -80,7 +80,7 @@ function FilterBar({
 
 FilterBar.propTypes = {
   onCuisineChange: PropTypes.func.isRequired,
-  cuisineValue: PropTypes.string.isRequireds,
+  cuisineValue: PropTypes.string.isRequired,
   onCategoryChange: PropTypes.func.isRequired,
   categoryValue: PropTypes.string.isRequired,
   onDifficultyChange: PropTypes.func.isRequired,

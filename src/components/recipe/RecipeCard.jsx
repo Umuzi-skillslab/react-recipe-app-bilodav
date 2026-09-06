@@ -61,12 +61,14 @@ function RecipeCard({
 
 RecipeCard.propTypes = {
   image: PropTypes.string.isRequired,
-  id: PropTypes.oneOf([PropTypes.number, PropTypes.string]).isRequired,
+  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   title: PropTypes.string.isRequired,
-  cookingTime: PropTypes.oneOf([PropTypes.number, PropTypes.string]).isRequired,
+  cookingTime: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+    .isRequired,
   difficulty: PropTypes.oneOf(["easy", "medium", "hard"]).isRequired,
   onNavigate: PropTypes.func,
-  servings: PropTypes.oneOf([PropTypes.number, PropTypes.string]).isRequired,
+  servings: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+    .isRequired,
 };
 
 export default RecipeCard;
