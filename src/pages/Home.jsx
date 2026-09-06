@@ -24,10 +24,10 @@ function Home() {
   const dinnerList = recipesData.filter((entry) => entry.category === "dinner");
 
   const randomDinner =
-    dinnerList[Math.floor(Math.random() * dinnerList.length) + 1];
+    dinnerList[Math.floor(Math.random() * dinnerList.length)];
 
   const randomBreakfast =
-    breakfastList[Math.floor(Math.random() * breakfastList.length) + 1];
+    breakfastList[Math.floor(Math.random() * breakfastList.length)];
 
   console.log(randomDinner);
 
